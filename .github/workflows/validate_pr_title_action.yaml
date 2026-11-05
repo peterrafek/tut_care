@@ -1,0 +1,28 @@
+name: Pull Request Title & Branch Name Validator
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited]
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR Title
+        uses: pragmatic-tools/pr-title-validator@1.0.0
+        with:
+          pattern: |
+            ^(fix|release|feat|hotfix|build|test):\s?.+$
+
+      - name: Validate Branch Name
+        env:
+          BRANCH_NAME: ${{ github.head_ref }}
+        run: |
+          echo "Branch Name: $BRANCH_NAME"
+
+          if [[ ! "$BRANCH_NAME" =~ ^feature/[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
+            echo "::error::Branch name must follow this format: feature/login-screen"
+            exit 1
+          fi
+
+          echo "Branch name is valid."
