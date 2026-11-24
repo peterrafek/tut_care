@@ -1,10 +1,9 @@
-// ignore: must_be_immutable
+
 import 'package:equatable/equatable.dart';
 import 'package:tut_care/domain/entities/address/address_entity.dart';
 
-
 class UserDataEntity extends Equatable {
-  UserDataEntity({
+  const UserDataEntity({
     this.id,
     this.firstName,
     this.lastName,
@@ -18,17 +17,17 @@ class UserDataEntity extends Equatable {
     this.passwordResetCode,
   });
 
-  String? id;
-  String? firstName;
-  String? lastName;
-  String? email;
-  String? gender;
-  String? phone;
-  String? photo;
-  String? role;
-  List<String>? wishlist;
-  List<AddressEntity>? addresses;
-  String? passwordResetCode;
+  final String? id;
+  final String? firstName;
+  final String? lastName;
+  final String? email;
+  final String? gender;
+  final String? phone;
+  final String? photo;
+  final String? role;
+  final List<String>? wishlist;
+  final List<AddressEntity>? addresses;
+  final String? passwordResetCode;
 
   @override
   List<Object?> get props => [

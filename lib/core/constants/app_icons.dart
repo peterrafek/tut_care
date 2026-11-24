@@ -58,4 +58,10 @@ abstract final class AppIcons {
   // Help & Authentication
   static const String help = "assets/icons/help.svg";
   static const String logOut = "assets/icons/log_out.svg";
+
+  static const String toggle = "assets/icons/toggle.svg";
+  static const String toggleOn = "assets/icons/toggle_on.svg";
+  static const String uploaded = "assets/icons/uploaded.svg";
+  static const String rejected = "assets/icons/rejected.svg";
+
 }

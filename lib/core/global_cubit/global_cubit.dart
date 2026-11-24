@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:injectable/injectable.dart';
 import 'package:tut_care/core/cache/shared_preferences_helper.dart';
-import 'package:tut_care/core/constans/const_key.dart';
+import 'package:tut_care/core/constants/const_key.dart';
 import 'package:tut_care/core/router/route_names.dart';
 import 'package:tut_care/core/secure_storage/secure_storage.dart';
 import 'package:tut_care/utils/tut_care_method_helper.dart';
@@ -50,7 +50,8 @@ class GlobalCubit extends Cubit<GlobalState> {
       TutCareMethodHelper.currentUserToken = userToken;
       redirectedScreen = RouteNames.tutCareBottomNavigation;
     } else {
-      redirectedScreen = RouteNames.login;
+      // redirectedScreen = RouteNames.login;
+      redirectedScreen = RouteNames.assistantOnboardingView;
     }
     emit(LoadedRedirectedScreen());
   }

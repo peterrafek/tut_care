@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:tut_care/core/constans/app_text.dart';
+import 'package:tut_care/core/constants/app_text.dart';
 
 abstract class Validations {
   static String? userNameValidation({required String? name}) {
