@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:tut_care/core/connection_manager/connection_manager.dart';
-import 'package:tut_care/core/constans/app_text.dart';
+import 'package:tut_care/core/constants/app_text.dart';
 import 'package:tut_care/core/exceptions/dio_exceptions.dart';
 import 'package:tut_care/core/exceptions/response_exceptions.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:injectable/injectable.dart';
-import 'package:tut_care/core/constans/const_key.dart';
+import 'package:tut_care/core/constants/const_key.dart';
 
 @singleton
 class SecureStorage {

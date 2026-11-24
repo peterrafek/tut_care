@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
-import 'package:tut_care/core/constans/endpoints.dart';
+import 'package:tut_care/core/constants/endpoints.dart';
 
 part 'api_client.g.dart';
 

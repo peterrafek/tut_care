@@ -26,7 +26,7 @@ class TutCareApp extends StatelessWidget {
             ? MaterialApp(
                 title: 'Tut Care',
                 debugShowCheckedModeBanner: false,
-                theme: AppTheme.darkTheme,
+                theme: AppTheme.lightTheme,
                 themeMode: ThemeMode.light,
                 onGenerateRoute: AppRoutes.onGenerateRoute,
                 initialRoute: globalCubit.redirectedScreen,

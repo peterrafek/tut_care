@@ -8,18 +8,15 @@ abstract final class AppColors {
   // Brand
   static const Color brandLight = Color(0xff083B66);
   static const Color brandDark = Color(0xff58C3EB);
-
-  static const Color brandPressedLight = Color(0xff002B41);
+   static const Color brandPressedLight = Color(0xff002B41);
   static const Color brandPressedDark = Color(0xff8AD6F2);
 
   static const Color brandSubtleLight = Color(0xffEEF6FB);
   static const Color brandSubtleDark = Color(0xff1C3D54);
-
   // Canvas
   static const Color canvasLight = Color(0xffFFFFFF);
   static const Color canvasDark = Color(0xff162A3B);
-
-  // Danger
+   // Danger
   static const Color dangerLight = Color(0xffDC2626);
   static const Color dangerDark = Color(0xffF87171);
 
@@ -108,7 +105,6 @@ abstract final class AppColors {
 
   static const Color textSecondaryLight = Color(0xff4F5D69);
   static const Color textSecondaryDark = Color(0xff8BA3B5);
-
   static const Color textSuccessLight = Color(0xff17703A);
   static const Color textSuccessDark = Color(0xff5DD39E);
 
